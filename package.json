@@ -1,0 +1,25 @@
+{
+  "name": "@canterbury-air-patrol/marine-sweep-width-data",
+  "version": "0.0.1",
+  "description": "Marine Search and Rescue Sweep Width Data",
+  "main": "marine-sweep-width-data.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/canterbury-air-patrol/marine-sweep-width-data.git"
+  },
+  "keywords": [
+    "sar",
+    "marine",
+    "sweep",
+    "width"
+  ],
+  "author": "Scott Parlane",
+  "license": "PDDL-1.0",
+  "bugs": {
+    "url": "https://github.com/canterbury-air-patrol/marine-sweep-width-data/issues"
+  },
+  "homepage": "https://github.com/canterbury-air-patrol/marine-sweep-width-data#readme"
+}
