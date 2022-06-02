@@ -2,23 +2,24 @@ Person in Water,small
 Raft 1 person,small
 Raft 4 person,small
 Raft 6 person,small
+Raft 8 person,small
 Raft 10 person,small
 Raft 15 person,small
 Raft 20 person,small
 Raft 25 person,small
-Power Boat ≤ 15 ft,small
-Power Boat 20 ft,small
-Power Boat 33 ft,large
-Power Boat 53 ft,large
-Power Boat 78 ft,large
-Sail Boat 15 ft,small
-Sail Boat 20 ft,small
-Sail Boat 25 ft,small
-Sail Boat 30 ft,large
-Sail Boat 40 ft,large
-Sail Boat 50 ft,large
-Sail Boat 70 ft,large
-Sail Boat 83 ft,large
-Ship 120 ft,large
-Ship 225 ft,large
-Ship ≥ 300 ft,large
+Power Boat ≤ 15ft,small
+Power Boat 20ft,small
+Power Boat 33ft,large
+Power Boat 53ft,large
+Power Boat 78ft,large
+Sail Boat 15ft,small
+Sail Boat 20ft,small
+Sail Boat 25ft,small
+Sail Boat 30ft,large
+Sail Boat 40ft,large
+Sail Boat 50ft,large
+Sail Boat 70ft,large
+Sail Boat 83ft,large
+Ship 120ft,large
+Ship 225ft,large
+Ship ≥ 300ft,large
