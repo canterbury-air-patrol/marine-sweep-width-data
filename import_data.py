@@ -51,8 +51,8 @@ def load_sweep_widths(directory):
 load_corrections(corrections_file)
 load_sweep_widths(directory)
 
-with open('marine-sweep-width-data.js', 'w') as output:
+with open('marine-sweep-width-data-table.js', 'w') as output:
     output.write('const marine_sweep_widths =\n')
     output.write(json.JSONEncoder().encode(data))
     output.write(';\n')
-    output.write("export {'marine_sweep_widths'};")
+    output.write('export { marine_sweep_widths };')
