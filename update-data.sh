@@ -14,4 +14,4 @@ git checkout -b main origin/main
 
 mv ${TMP_FILE} ${DATA_FILE}
 
-git commit -a -m "Update data table from ${GIT_COMMIT}"
+git commit -a -m "Update data table from ${GIT_COMMIT}" --author "GitHub <noreply@github.com>"
