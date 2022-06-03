@@ -1,0 +1,25 @@
+name: update-data
+
+on:
+  push:
+    branches:
+      - source-data
+
+permissions:
+  pull-requests: write
+
+jobs:
+  create-pr-for-main:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: run update-data.sh
+        run: ./update-data.sh
+      - name: Create PR
+        uses: peter-evans/create-pull-request@v4
+        env:
+          delete-branch: true
+          base: main
+          title: Update data
+
