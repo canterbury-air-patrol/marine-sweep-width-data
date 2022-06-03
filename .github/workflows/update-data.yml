@@ -6,6 +6,7 @@ on:
       - source-data
 
 permissions:
+  contents: write
   pull-requests: write
 
 jobs:
