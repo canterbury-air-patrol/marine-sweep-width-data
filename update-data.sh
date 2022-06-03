@@ -9,7 +9,7 @@ TMP_FILE=${DATA_FILE}.tmp
 
 cp ${DATA_FILE} ${TMP_FILE}
 
-git checkout main
+git checkout -b main origin/main
 
 mv ${TMP_FILE} ${DATA_FILE}
 
