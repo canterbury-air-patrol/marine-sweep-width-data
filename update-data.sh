@@ -2,8 +2,6 @@
 
 ./import_data.py
 
-GIT_COMMIT=`git rev-parse HEAD`
-
 DATA_FILE=marine-sweep-width-data-table.js
 TMP_FILE=${DATA_FILE}.tmp
 
@@ -13,5 +11,3 @@ git fetch origin
 git checkout -b main origin/main
 
 mv ${TMP_FILE} ${DATA_FILE}
-
-git commit -a -m "Update data table from ${GIT_COMMIT}" --author "GitHub <noreply@github.com>"

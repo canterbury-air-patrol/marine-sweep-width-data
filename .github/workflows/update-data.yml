@@ -18,7 +18,8 @@ jobs:
         run: ./update-data.sh
       - name: Create PR
         uses: peter-evans/create-pull-request@v4
-        env:
+        with:
+          commit-message: "Update based on source-data commit ${{ github.sha }}"
           delete-branch: true
           base: main
           title: Update data
