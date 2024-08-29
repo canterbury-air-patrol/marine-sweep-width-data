@@ -15,7 +15,7 @@ def merge_sw_distance(sweep_widths, distances):
     for sw, viz in zip(sweep_widths, distances):
         if sw == last_sw:
             continue
-        result.append({'sw': sw, 'vis': viz})
+        result.append({'sw': float(sw), 'vis': float(viz)})
         last_sw = sw
     return result
 
