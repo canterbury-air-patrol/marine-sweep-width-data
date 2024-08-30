@@ -6,6 +6,7 @@ import json
 
 corrections_file = 'weather_correction_types.csv'
 directory = 'source-data'
+speed_correction_files = ('Aircraft_speed_modifier.csv', 'Helicopter_speed_modifier.csv')
 
 data = {}
 
@@ -19,6 +20,16 @@ def merge_sw_distance(sweep_widths, distances):
         last_sw = sw
     return result
 
+def merge_speed_correction(corrections, speeds):
+    result = []
+    last_correction = -1
+    for correction, speed in zip(corrections, speeds):
+        if correction == last_correction:
+            continue
+        result.append({'speed': int(speed), 'correction': float(correction)})
+        last_correction = correction
+    return result
+
 def load_corrections(corrections_file):
     with open(corrections_file, 'r') as csvfile:
         reader = csv.reader(csvfile)
@@ -27,6 +38,20 @@ def load_corrections(corrections_file):
                 data[line[0]] = {}
             data[line[0]]['weather_corrections'] = line[1]
 
+def load_speed_corrections(corrections_file):
+    asset_type = corrections_file.split('_')[0]
+    with open(corrections_file, 'r') as csvfile:
+        speeds = []
+        reader = csv.reader(csvfile)
+        for line in reader:
+            if line[0] == 'Search Object':
+                speeds = line[1:]
+                continue
+            if line[0] not in data:
+                data[line[0]] = {}
+            if 'speed_corrections' not in data[line[0]]:
+                data[line[0]]['speed_corrections'] = {}
+            data[line[0]]['speed_corrections'][asset_type] = merge_speed_correction(line[1:],speeds)
 
 def load_sweep_widths(directory):
     for f in os.listdir(directory):
@@ -49,6 +74,8 @@ def load_sweep_widths(directory):
                     data[line[0]][asset_type][height] = merge_sw_distance(line[1:],distances)
 
 load_corrections(corrections_file)
+for correction_file in speed_correction_files:
+    load_speed_corrections(correction_file)
 load_sweep_widths(directory)
 
 with open('marine-sweep-width-data-table.js', 'w') as output:

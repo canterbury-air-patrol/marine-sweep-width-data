@@ -1,0 +1,26 @@
+Search Object,60,90,120,140
+Person in Water,1.5,1.0,0.8,0.7
+Raft 1 person,1.3,1.0,0.9,0.8
+Raft 4 person,1.3,1.0,0.9,0.8
+Raft 6 person,1.2,1.0,0.9,0.8
+Raft 8 person,1.2,1.0,0.9,0.8
+Raft 10 person,1.2,1.0,0.9,0.8
+Raft 15 person,1.2,1.0,0.9,0.8
+Raft 20 person,1.2,1.0,0.9,0.8
+Raft 25 person,1.2,1.0,0.9,0.8
+Power Boat ≤ 15ft,1.2,1.0,0.9,0.8
+Power Boat 20ft,1.2,1.0,0.9,0.8
+Power Boat 33ft,1.1,1.0,0.9,0.9
+Power Boat 53ft,1.1,1.0,0.9,0.9
+Power Boat 78ft,1.1,1.0,1.0,0.9
+Sail Boat 15ft,1.2,1.0,0.9,0.9
+Sail Boat 20ft,1.2,1.0,0.9,0.9
+Sail Boat 25ft,1.2,1.0,0.9,0.9
+Sail Boat 30ft,1.1,1.0,0.9,0.9
+Sail Boat 40ft,1.1,1.0,0.9,0.9
+Sail Boat 50ft,1.1,1.0,0.9,0.9
+Sail Boat 70ft,1.1,1.0,1.0,0.9
+Sail Boat 83ft,1.1,1.0,1.0,0.9
+Ship 120ft,1.1,1.0,1.0,0.9
+Ship 225ft,1.1,1.0,1.0,0.9
+Ship ≥ 300ft,1.1,1.0,1.0,0.9
