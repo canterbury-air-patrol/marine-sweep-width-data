@@ -81,6 +81,6 @@ load_sweep_widths(directory)
 with open('marine-sweep-width-data-table.ts', 'w') as output:
     output.write('import { MarineSweepWidthData } from "./marine-sweep-width-types";\n')
     output.write('const marine_sweep_widths: MarineSweepWidthData =\n')
-    output.write(json.JSONEncoder().encode(data))
+    output.write(json.dumps(data, indent=2))
     output.write(';\n')
     output.write('export { marine_sweep_widths };')
