@@ -1,7 +1,7 @@
 import { defineConfig } from 'tsup'
 
 export default defineConfig({
-  entry: ['marine-leeway-table.ts'],
+  entry: ['marine-sweep-width-data.ts'],
   format: ['cjs', 'esm'], // Build for commonJS and ESmodules
   dts: true, // Generate declaration file (.d.ts)
   splitting: false,
