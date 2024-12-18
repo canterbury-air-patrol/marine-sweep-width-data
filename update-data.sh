@@ -2,7 +2,7 @@
 
 ./import_data.py
 
-DATA_FILE=marine-sweep-width-data-table.js
+DATA_FILE=marine-sweep-width-data-table.ts
 TMP_FILE=${DATA_FILE}.tmp
 
 cp ${DATA_FILE} ${TMP_FILE}
